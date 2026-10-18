@@ -231,3 +231,10 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 .r-media button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
 .r-media img { display: block; width: 100%; height: auto; margin: 0 auto; border: 0; border-radius: 8px; }
 .r-media figcaption { font-size: 14px; color: var(--text-3); margin-top: 6px; }
+
+/* ===== Main page: story photos link to their subpage ===== */
+.photo-link { display: block; border-radius: 6px; overflow: hidden; }
+.photo-link .photo { transition: transform .35s ease, opacity .2s; }
+.photo-link:hover .photo { transform: scale(1.015); opacity: .94; }
+.photo-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .photo-link .photo { transition: none; } .photo-link:hover .photo { transform: none; } }
