@@ -254,7 +254,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
   opacity: .85; border-radius: 3px 10px 4px 12px;
   /* angle set per item by main.js so the stroke runs from the text's
      bottom-left corner to its top-right corner; -8deg is the no-JS fallback */
-  transform: rotate(var(--hl-rot, -8deg)) skewX(-14deg);
-  transform-origin: center;
+  transform: translateY(var(--hl-dy, 0px)) rotate(var(--hl-rot, -8deg)) skewX(-14deg);
+  transform-origin: left center;   /* left end stays put; only the right end moves */
 }
 @media print { .hl::before { opacity: .5; } }
