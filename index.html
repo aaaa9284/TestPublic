@@ -16,27 +16,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
+<body id="top">
   <a class="skip" href="#main">본문으로 건너뛰기</a>
-  <header class="site-header">
-    <nav class="container nav" aria-label="주요 메뉴">
-      <a class="brand" href="/">김윤의 작업 이야기</a>
-      <ul class="nav-links">
-        <li><a href="#stories">작업 이야기</a></li>
-        <li><a href="/resume.html">이력서</a></li>
-        <li><a class="pill" href="#contact">연락하기</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container">
-        <h1>“이 일, 매번 손으로 해야 하나요?”<br>그 질문에서 모든 작업이 시작됐습니다.</h1>
-        <p class="lead">반복 업무를 찾아 자동화하고, 비개발자가 바로 쓰는 도구로 넘겨줍니다. 현장에서 반복되는 일을 누구나 쓸 수 있는 도구로 바꿔 온 세 가지 이야기를 소개합니다.</p>
+    <section class="hero intro" id="about">
+      <div class="container narrow">
+        <p class="kicker">김윤 · 신입 AI 바이브 코더</p>
+        <h1>저를 소개합니다</h1>
+        <p>다년간 별도의 가이드 없이 기획부터 구현까지 혼자 해내며, 그 결과를 팀 업무에 적용해 왔습니다. 모션캡처 현장에서 3년간 반복 작업을 직접 스크립트로 자동화했고, 최근에는 Claude로 동물병원 보고서 자동화 프로그램을 기획부터 납품까지 혼자 만들었습니다.</p>
+        <p>AI로 코드를 만들 때도 결과를 직접 읽고, AI가 착각한 부분을 공식 문서를 근거로 짚어냅니다. 그래서 비용은 아끼고 더 안전하고 빠른 결과물을 냅니다.</p>
+        <p>영어를 불편함 없이 쓰고, 엑셀·파워포인트·사진 편집과 3D 프로그램까지 두루 다룹니다. 영업·기획·행정 실무 경험도 있습니다.</p>
         <div class="actions">
-          <a class="btn" href="#stories">이야기 읽기</a>
-          <a class="btn ghost" href="/resume.html">이력서 보기</a>
+          <a class="btn" href="/resume.html">이력서 보기</a>
         </div>
       </div>
     </section>
@@ -85,16 +77,6 @@
       </article>
     </div>
 
-    <section class="band" id="about">
-      <div class="container narrow">
-        <h2>저를 소개합니다</h2>
-        <p>다년간 별도의 가이드 없이 기획부터 구현까지 혼자 해내며, 그 결과를 팀 업무에 적용해 왔습니다. 모션캡처 현장에서 3년간 반복 작업을 직접 스크립트로 자동화했고, 최근에는 Claude로 동물병원 보고서 자동화 프로그램을 기획부터 납품까지 혼자 만들었습니다.</p>
-        <p>AI로 코드를 만들 때도 결과를 직접 읽고, AI가 착각한 부분을 공식 문서를 근거로 짚어냅니다. 그래서 비용은 아끼고 더 안전하고 빠른 결과물을 냅니다.</p>
-        <p>영어를 불편함 없이 쓰고, 엑셀·파워포인트·사진 편집과 3D 프로그램까지 두루 다룹니다. 영업·기획·행정 실무 경험도 있습니다.</p>
-        <p style="margin-top:24px"><a class="link-more" href="/resume.html">이력서 한 장으로 보기 →</a></p>
-      </div>
-    </section>
-
     <section class="contact" id="contact">
       <div class="container">
         <h2>다음 이야기는 함께 쓰고 싶습니다.</h2>
@@ -113,6 +95,7 @@
       <span>이 사이트는 Claude와 함께 HTML·CSS·JS로 만들었습니다.</span>
     </div>
   </footer>
+  <a class="to-top" href="#top" aria-label="맨 위로 가기">↑ 위로 가기</a>
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

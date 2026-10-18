@@ -37,6 +37,18 @@
     document.querySelectorAll('.reveal').forEach(el => { el.classList.add('in'); fillBars(el); });
   }
 
+  // ---- Back to top: show after scrolling down ----
+  const toTop = document.querySelector('.to-top');
+  if (toTop) {
+    const t = () => toTop.classList.toggle('show', scrollY > 400);
+    addEventListener('scroll', t, { passive: true });
+    t();
+    toTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  }
+
   // ---- Print (résumé page) ----
   document.querySelectorAll('[data-print]').forEach(b => b.addEventListener('click', () => window.print()));
 
