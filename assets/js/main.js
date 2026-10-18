@@ -55,7 +55,7 @@
     const r = el.getBoundingClientRect();
     const fs = parseFloat(getComputedStyle(el).fontSize);
     const len = r.width + 28;                 // stroke length incl. overhang
-    const rise = r.height * 0.72 - fs * 0.5;  // glyph height minus stroke thickness
+    const rise = r.height * 0.55;             // keeps the corner-to-corner slant with a thick stroke
     const deg = Math.asin(Math.min(0.5, Math.max(0, rise / len))) * 180 / Math.PI;
     el.style.setProperty('--hl-rot', (-deg).toFixed(2) + 'deg');
   });
