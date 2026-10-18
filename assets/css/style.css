@@ -258,3 +258,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
   transform-origin: center;
 }
 @media print { .hl::before { opacity: .5; } }
+
+/* ===== White button (아래로) ===== */
+.btn.white { background: #fff; color: var(--text); border: 1.5px solid var(--line-strong); }
+.btn.white:hover { background: #fff; border-color: var(--accent); color: var(--accent); }
