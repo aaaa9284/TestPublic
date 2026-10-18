@@ -220,14 +220,14 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 .contact { border-top: 1px solid var(--line); }
 @media (max-width: 480px) { .hero.intro { padding: 72px 0 64px; } }
 
-/* ===== 결과 + images: 2 columns (images left, text right) ===== */
-.dsec.result { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; align-items: start; }
-.r-media { display: flex; flex-direction: column; align-items: center; gap: 16px; }
-.r-media figure { margin: 0; width: 100%; text-align: center; }
+/* ===== 결과: text first, images below (single column) ===== */
+.dsec.result { display: block; }
+.r-text { display: flex; flex-wrap: wrap; gap: 8px 32px; }
+.r-text h3 { flex: 1 1 140px; font-size: 18px; }
+.r-text ul { flex: 999 1 480px; min-width: 0; margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.r-media { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 32px; }
+.r-media figure { margin: 0; width: 100%; max-width: 760px; text-align: center; }
 .r-media button { all: unset; display: block; width: 100%; cursor: zoom-in; }
 .r-media button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
 .r-media img { display: block; width: 100%; height: auto; margin: 0 auto; border: 0; border-radius: 8px; }
 .r-media figcaption { font-size: 14px; color: var(--text-3); margin-top: 6px; }
-.r-text h3 { font-size: 18px; margin-bottom: 12px; }
-.r-text ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
-@media (max-width: 720px) { .dsec.result { grid-template-columns: 1fr; } }
