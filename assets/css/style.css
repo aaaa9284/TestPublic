@@ -248,10 +248,13 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 .hl { position: relative; display: inline-block; z-index: 0; padding: 0 2px; }
 .hl::before {
   content: ""; position: absolute; z-index: -1;
-  left: -10px; right: -30px; bottom: -0.06em; height: 0.72em;   /* oversized, runs past the right end */
+  left: -10px; right: -18px; top: 50%; height: 0.5em;   /* oversized past both ends */
+  margin-top: -0.25em;
   background: #dcf04a;                 /* lime-ish yellow */
   opacity: .85; border-radius: 3px 10px 4px 12px;
-  transform: rotate(-1deg) skewX(-14deg);  /* both ends sit at the text bottom */
-  transform-origin: left center;
+  /* angle set per item by main.js so the stroke runs from the text's
+     bottom-left corner to its top-right corner; -8deg is the no-JS fallback */
+  transform: rotate(var(--hl-rot, -8deg)) skewX(-14deg);
+  transform-origin: center;
 }
 @media print { .hl::before { opacity: .5; } }
