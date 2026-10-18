@@ -8,9 +8,9 @@
   --text-3: #6f6762;
   --line: #e8e3e0;
   --line-strong: #d6cfca;
-  --accent: #c2391b;          /* crimson orange, 5.4:1 on white */
-  --accent-hover: #9a2c14;
-  --accent-soft: #fbeee9;
+  --accent: #c24a16;          /* crimson orange, 4.9:1 on white */
+  --accent-hover: #9a3a10;
+  --accent-soft: #fcf0e8;
   --before: transparent;
   --before-ink: #6f6762;
   --serif: "Noto Serif KR", serif;
