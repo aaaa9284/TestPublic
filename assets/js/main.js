@@ -54,7 +54,7 @@
   const tiltHl = () => hls.forEach(el => {
     const r = el.getBoundingClientRect();
     const fs = parseFloat(getComputedStyle(el).fontSize);
-    const len = r.width + 28;                 // stroke length incl. overhang
+    const len = r.width + 10 + fs * 0.33;     // stroke length incl. overhang (left 10px, right ⅓ em)
     const rise0 = r.height * 0.55;            // original corner-to-corner slant
     const leftDrop = rise0 / 2;               // where the left end sat before (kept)
     const rise = Math.max(0, rise0 - fs / 3); // right end lowered by ~1/3 of the text size
