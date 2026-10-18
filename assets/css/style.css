@@ -248,10 +248,10 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 .hl { position: relative; display: inline-block; z-index: 0; padding: 0 2px; }
 .hl::before {
   content: ""; position: absolute; z-index: -1;
-  left: -10px; right: -14px; bottom: 0.02em; height: 0.62em;
+  left: -12px; right: -12px; bottom: 0.04em; height: 0.6em;   /* equal overhang both sides */
   background: #dcf04a;                 /* lime-ish yellow */
-  opacity: .85; border-radius: 3px 10px 4px 12px;
-  transform: rotate(-3deg) skewX(-14deg);
-  transform-origin: left center;
+  opacity: .85; border-radius: 8px;    /* same rounding at both ends */
+  transform: rotate(-5deg);            /* right end higher than left */
+  transform-origin: center;
 }
 @media print { .hl::before { opacity: .5; } }
