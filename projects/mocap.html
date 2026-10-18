@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>모션캡처 데이터 처리 자동화 · 김윤</title>
+  <meta name="description" content="두 사람이 손으로 하던 모션캡처 데이터 처리를 혼자서도 더 빨리, 더 정확하게.">
+  <meta property="og:title" content="모션캡처 데이터 처리 자동화 · 김윤">
+  <meta property="og:image" content="/assets/img/mocap-2.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="주요 메뉴">
+      <a class="brand" href="/">김윤의 작업 이야기</a>
+      <ul class="nav-links">
+        <li><a href="/#stories" aria-current="page">작업 이야기</a></li>
+        <li><a href="/resume.html">이력서</a></li>
+        <li><a class="pill" href="/#contact">연락하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="case-hero">
+      <a class="back" href="/#stories">← 작업 이야기로</a>
+      <p class="kicker">이야기 3 · 모션캡처 팀 · (주)시나몬</p>
+      <h1>모션캡처 데이터 처리 자동화</h1>
+
+      <div class="callout">
+        <p class="lbl">한눈에 보기</p>
+        <ul>
+          <li>두 사람이 손으로 하던 일을 <b>혼자서도 더 빨리, 더 정확히</b></li>
+          <li>꼭 필요한 두세 단계를 빼고 <b>모든 반복 과정을 자동화</b></li>
+          <li>다른 사람 대비 <b>절반 이하의 시간</b>으로 처리</li>
+        </ul>
+      </div>
+
+      <div class="compare">
+        <div class="side">
+          <div class="tag">전에는</div>
+          <div class="num">2명이 손으로</div>
+          <p>정해진 절차를 매번 사람이 반복했습니다.</p>
+        </div>
+        <div class="side after">
+          <div class="tag">지금은</div>
+          <div class="num">1명이 자동으로</div>
+          <p>스크립트와 일괄 처리로, 사람은 꼭 필요한 판단만 합니다.</p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><small>소속</small><b>(주)시나몬 모션팀</b></div>
+        <div class="fact"><small>작업 범위</small><b>데이터 정리·변환 전 과정</b></div>
+        <div class="fact"><small>사용 도구</small><b>Claude, Python, MotionBuilder, Shogun</b></div>
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>조금 더 자세히</h2>
+      <div class="dsec">
+        <h3>배경</h3>
+        <ul>
+          <li>촬영한 동작 데이터를 정리·변환해 다음 공정에 넘기는, 반복이 대부분인 업무</li>
+          <li>3D 제작 과정의 맨 앞이라 빠른 처리가 필수</li>
+          <li>같은 업무를 하던 동료가 입사 6개월쯤 후 퇴사</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>목적</h3>
+        <ul>
+          <li>자동화할 수 있는 모든 것을 자동화해 시간 확보</li>
+          <li>동료 퇴사 후 2인분을 혼자 처리</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>기획</h3>
+        <ul>
+          <li>현재 업무 과정을 전부 나열 <span class="arrow">→</span> 자동화 필요성과 가능성 평가</li>
+          <li>시간이 가장 많이 들고 수고로운 부분부터 자동화</li>
+          <li>Claude를 최대한 활용하고, 필요한 부분만 직접 코딩</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>구현</h3>
+        <ul>
+          <li>저장·내보내기 경로와 파일명을 정해, 다음 작업이 바로 이어받도록 구성</li>
+          <li>자세를 분석해 움직임·회전 여부를 판별하고 알맞은 작업을 자동 수행</li>
+          <li>수작업이 필요 없는 여러 스크립트를 하나로 묶어 실행</li>
+          <li>여러 파일·여러 테이크 작업은 모두 일괄 처리</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>결과</h3>
+        <ul>
+          <li>필수 수작업 두세 개와 실행 자체를 빼고 모두 자동화</li>
+          <li>다른 사람 대비 절반 이하의 시간으로 더 정확한 작업</li>
+          <li>퇴사할 때까지 업무 병목 없이 창의적인 작업에 집중</li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <figure><button type="button" data-lightbox="작업 화면"><img src="/assets/img/mocap-2.webp" alt="모션캡처 소프트웨어가 띄워진 모니터" width="1600" height="1200" loading="lazy"></button></figure>
+        <figure><button type="button" data-lightbox="작업 데스크"><img src="/assets/img/mocap-1.webp" alt="여러 모니터가 있는 작업 데스크" width="1600" height="1200" loading="lazy"></button></figure>
+        <figure><button type="button" data-lightbox="모션캡처 스튜디오"><img src="/assets/img/mocap-3.webp" alt="모션캡처 스튜디오 전경" width="1600" height="1200" loading="lazy"></button></figure>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="다른 이야기">
+      <a href="/projects/live.html"><small>← 이전 이야기</small><span>방송 전 준비에 2시간 반이 걸리던 현장</span></a>
+      <a class="r" href="/projects/vet.html"><small>다음 이야기 →</small><span>보고서 한 장에 90분 걸리던 병원</span></a>
+    </nav>
+  </main>
+
+  <dialog class="lightbox" aria-label="이미지 확대 보기"><div class="lb-inner"><img alt=""></div><button class="lb-close" type="button" aria-label="닫기">✕</button><div class="lb-cap"></div></dialog>
+  <footer><div class="container"><span>© 2026 김윤 Kim Yoon</span><a href="/">처음으로</a></div></footer>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

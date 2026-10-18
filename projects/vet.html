@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>동물병원 보고서 자동화 · 김윤</title>
+  <meta name="description" content="동물병원 보호자용 보고서 작성 90분 → 15분. 기획부터 납품까지 1인, Claude 활용.">
+  <meta property="og:title" content="동물병원 보고서 자동화 · 김윤">
+  <meta property="og:image" content="/assets/img/vet-after.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="주요 메뉴">
+      <a class="brand" href="/">김윤의 작업 이야기</a>
+      <ul class="nav-links">
+        <li><a href="/#stories" aria-current="page">작업 이야기</a></li>
+        <li><a href="/resume.html">이력서</a></li>
+        <li><a class="pill" href="/#contact">연락하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="case-hero">
+      <a class="back" href="/#stories">← 작업 이야기로</a>
+      <p class="kicker">이야기 1 · 동물병원 · 프리랜서</p>
+      <h1>동물병원 보호자용 보고서 자동화</h1>
+
+      <div class="callout">
+        <p class="lbl">한눈에 보기</p>
+        <ul>
+          <li>보호자에게 드리는 보고서 작성 <b>1시간 30분 → 15분</b></li>
+          <li>손으로는 못 하던 <b>검사 수치 그래프까지 자동</b>으로 작성</li>
+          <li>요구 파악, 설계, 개발(Claude), 설치·배포, 유지보수를 <b>혼자</b> 수행</li>
+          <li>소요 기간 약 2.5개월 (2026.05.05 – 2026.07.21)</li>
+        </ul>
+      </div>
+
+      <div class="compare">
+        <div class="side">
+          <div class="tag">전에는</div>
+          <div class="num">90분</div>
+          <p>검사 수치를 하나하나 옮겨 적고, 보고서에는 표만 있고 그래프가 없었습니다.</p>
+          <button type="button" data-lightbox="전 — 기존 매크로로 만든 보고서"><img src="/assets/img/vet-before.webp" alt="기존의 표 형식 보고서" width="930" height="775" loading="lazy"></button>
+        </div>
+        <div class="side after">
+          <div class="tag">지금은</div>
+          <div class="num">15분</div>
+          <p>결과를 넣으면 그래프까지 들어간 보고서가 자동으로 완성됩니다.</p>
+          <button type="button" data-lightbox="후 — 템플릿 기반 자동 생성 보고서"><img src="/assets/img/vet-after.webp" alt="그래프가 들어간 자동 생성 보고서" width="796" height="1144" loading="lazy"></button>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><small>맡은 역할</small><b>기획 · 개발 · 설치 · 유지보수 1인</b></div>
+        <div class="fact"><small>쓰는 사람</small><b>수의사 1명, 테크니션 3명</b></div>
+        <div class="fact"><small>사용 도구</small><b>Claude, Python</b></div>
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>조금 더 자세히</h2>
+      <div class="dsec">
+        <h3>고객 요구</h3>
+        <ul>
+          <li>보호자용 보고서(PPT)를 가능한 한 자동화</li>
+          <li>혈액 등 검사 결과를 그래프로 표시</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>병원 상황</h3>
+        <ul>
+          <li>보고서 작성 때문에 수의사의 시간이 항상 부족</li>
+          <li>초음파 사진에 구분 표시가 없어 보고서에 넣기 번거로움</li>
+          <li>저사양 사무용 PC 2대</li>
+          <li>기존 프로그램은 디자인이 아쉽고, 템플릿 변경이 안 되며, 그래프가 없음</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>기획</h3>
+        <ul>
+          <li>업무 흐름: 테크니션이 사진 이름을 바꾸고 변환 프로그램 실행 <span class="arrow">→</span> 수의사는 소견 작성과 초음파 사진 편집만</li>
+          <li>매번 AI를 돌리지 않고, 완성된 프로그램이 혼자 실행되도록 설계 (설치는 파일 1회 실행)</li>
+          <li>잘 작동하던 기존 엑셀 파일은 그대로 활용</li>
+          <li>사진은 끌어다 놓으면 이름이 바뀌고, 보고서의 정해진 자리에 자동 배치</li>
+          <li>병원이 언제든 디자인을 바꿀 수 있는 빈 템플릿 PPT 제공</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>개발</h3>
+        <ul>
+          <li>병원에서 받은 실제 샘플 차트로 작업</li>
+          <li>Claude가 코드 작성 <span class="arrow">→</span> 자동 디버깅 + 직접 검토·수정</li>
+          <li>주요 개발은 상위 요금제, 이후 간단한 수정은 하위 요금제로 비용 조절</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>문제와 해결</h3>
+        <ul>
+          <li>그래프 줄이 맞지 않음 <span class="arrow">→</span> 맞을 때까지 수정</li>
+          <li>그래프가 작다는 의견 <span class="arrow">→</span> 코드 수정 없이 템플릿에서 조정</li>
+          <li>일부 단위명 잘림 <span class="arrow">→</span> 원인이 꼬인 구조임을 찾아 v2.0에서 정리</li>
+          <li>병원 PC와 글꼴 불일치 <span class="arrow">→</span> 같은 오피스 환경을 갖추고 글자 크기 지정 방식 수정</li>
+          <li>검사 프로그램 언어가 예고 없이 바뀜 <span class="arrow">→</span> 바뀐 결과에 맞춰 대응</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>결과</h3>
+        <ul>
+          <li>수의사: 소견 작성과 초음파 편집에만 전념</li>
+          <li>테크니션: 끌어다 놓기로 사진을 넣고, 수치를 손으로 고칠 필요가 없어짐</li>
+          <li>최근값·직전값 그래프로 보고서 디자인도 만족</li>
+          <li>템플릿 디자인은 병원이 직접 변경 가능</li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <figure class="contain" style="max-width:560px">
+          <button type="button" data-lightbox="사진 이름 변경 도구 — 윈도우 폴더에서 끌어다 놓기로 작동"><img src="/assets/img/vet-renamer.webp" alt="태그 칸에 사진을 끌어다 놓는 사진 이름 변경 도구" width="812" height="646" loading="lazy"></button>
+          <figcaption>사진 이름 변경 도구 — 끌어다 놓기로 작동</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="다른 이야기">
+      <a href="/projects/mocap.html"><small>← 이전 이야기</small><span>두 사람이 하던 일을 혼자 맡게 된 날</span></a>
+      <a class="r" href="/projects/live.html"><small>다음 이야기 →</small><span>방송 전 준비에 2시간 반이 걸리던 현장</span></a>
+    </nav>
+  </main>
+
+  <dialog class="lightbox" aria-label="이미지 확대 보기"><div class="lb-inner"><img alt=""></div><button class="lb-close" type="button" aria-label="닫기">✕</button><div class="lb-cap"></div></dialog>
+  <footer><div class="container"><span>© 2026 김윤 Kim Yoon</span><a href="/">처음으로</a></div></footer>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

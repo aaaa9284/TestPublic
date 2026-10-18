@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>라이브 리타게팅 시스템 · 김윤</title>
+  <meta name="description" content="라이브 방송 모션캡처 준비 시간 2시간 30분 → 30분.">
+  <meta property="og:title" content="라이브 리타게팅 시스템 · 김윤">
+  <meta property="og:image" content="/assets/img/live-2.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="주요 메뉴">
+      <a class="brand" href="/">김윤의 작업 이야기</a>
+      <ul class="nav-links">
+        <li><a href="/#stories" aria-current="page">작업 이야기</a></li>
+        <li><a href="/resume.html">이력서</a></li>
+        <li><a class="pill" href="/#contact">연락하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="case-hero">
+      <a class="back" href="/#stories">← 작업 이야기로</a>
+      <p class="kicker">이야기 2 · 라이브 방송 · 메타버스엔터테인먼트(주)</p>
+      <h1>라이브 리타게팅 시스템</h1>
+
+      <div class="callout">
+        <p class="lbl">한눈에 보기</p>
+        <ul>
+          <li>방송 전 촬영 준비 시간 <b>2시간 30분 → 30분</b> (연기자 4명 기준)</li>
+          <li>연기자 1명당 <b>30분 이상 → 5분</b></li>
+          <li>편집한 설정이 저장되어, 방송할수록 <b>품질이 쌓임</b></li>
+        </ul>
+      </div>
+
+      <div class="compare">
+        <div class="side">
+          <div class="tag">전에는</div>
+          <div class="num">2시간 30분</div>
+          <p>촬영할 때마다 연기자의 몸 정보가 새로 만들어져, 현장에서 처음부터 다시 맞춰야 했습니다.</p>
+        </div>
+        <div class="side after">
+          <div class="tag">지금은</div>
+          <div class="num">30분</div>
+          <p>미리 해둔 설정을 매번 그대로 이어받고, 쓸수록 캐릭터 움직임이 자연스러워집니다.</p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><small>기간 · 소속</small><b>2023.07 – 2025.03 · TA팀</b></div>
+        <div class="fact"><small>쓰는 사람</small><b>방송 현장 스태프</b></div>
+        <div class="fact"><small>사용 도구</small><b>Python, MotionBuilder</b></div>
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>조금 더 자세히</h2>
+      <div class="dsec">
+        <h3>배경</h3>
+        <ul>
+          <li>모션캡처로 연기자의 움직임을 3D 캐릭터에 실시간으로 입히는 라이브 방송</li>
+          <li>흐름: 연기자 <span class="arrow">→</span> 3D 뼈대로 재구성 <span class="arrow">→</span> 캐릭터 뼈대로 보정(담당) <span class="arrow">→</span> 언리얼 엔진으로 실시간 송출</li>
+          <li>현장 작업이 늦어지면 뒤쪽 작업과 방송이 모두 밀림</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>목적</h3>
+        <ul>
+          <li>가능한 모든 것을 미리 준비해 현장 작업 최소화</li>
+          <li>실시간 데이터 송출을 더 안전하게</li>
+          <li>캐릭터의 더 정교하고 자연스러운 움직임</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>문제점</h3>
+        <ul>
+          <li>연기자의 3D 뼈대는 촬영 때마다 새로 만들어져, 원칙적으로 미리 준비할 수 없음</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>해결</h3>
+        <ul>
+          <li>매번 하던 뼈대 불러오기와 캐릭터 연결 작업을 자동화</li>
+          <li>정해진 자세로 불러오고, 약간의 오차는 허용하며 자동으로 맞춤</li>
+          <li>‘중간다리’ 뼈대에 미리 설정해 두고, 새 뼈대를 여기에 이어 붙여 설정을 계속 승계</li>
+          <li>자세를 인식해, 기존에 어색하던 여러 동작도 자연스럽게 보정</li>
+        </ul>
+      </div>
+      <div class="dsec">
+        <h3>결과</h3>
+        <ul>
+          <li>4인 동시 촬영 준비 2시간 30분 <span class="arrow">→</span> 30분</li>
+          <li>설정을 저장·발전시킬 수 있어 품질이 지속적으로 개선</li>
+        </ul>
+      </div>
+
+      <div class="video" data-yt="K4IBm2Ehu2M" data-start="3096" data-title="라이브 방송 영상">
+        <button type="button" aria-label="라이브 방송 영상 재생 (51:36부터)">
+          <img src="https://i.ytimg.com/vi/K4IBm2Ehu2M/hqdefault.jpg" alt="" loading="lazy">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="vlabel">실제 방송 영상 · 51:36부터</span>
+        </button>
+      </div>
+      <div class="gallery">
+        <figure><button type="button" data-lightbox="방송 화면"><img src="/assets/img/live-2.webp" alt="모니터 속 3D 캐릭터" width="1600" height="900" loading="lazy"></button></figure>
+        <figure><button type="button" data-lightbox="뼈대 화면"><img src="/assets/img/live-3.webp" alt="뼈대가 겹쳐진 3D 캐릭터 화면" width="1600" height="900" loading="lazy"></button></figure>
+        <figure><button type="button" data-lightbox="방송 화면"><img src="/assets/img/live-5.webp" alt="두 캐릭터가 나오는 방송 화면" width="1600" height="1200" loading="lazy"></button></figure>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="다른 이야기">
+      <a href="/projects/vet.html"><small>← 이전 이야기</small><span>보고서 한 장에 90분 걸리던 병원</span></a>
+      <a class="r" href="/projects/mocap.html"><small>다음 이야기 →</small><span>두 사람이 하던 일을 혼자 맡게 된 날</span></a>
+    </nav>
+  </main>
+
+  <dialog class="lightbox" aria-label="이미지 확대 보기"><div class="lb-inner"><img alt=""></div><button class="lb-close" type="button" aria-label="닫기">✕</button><div class="lb-cap"></div></dialog>
+  <footer><div class="container"><span>© 2026 김윤 Kim Yoon</span><a href="/">처음으로</a></div></footer>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
