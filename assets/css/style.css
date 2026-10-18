@@ -248,8 +248,8 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 .hl { position: relative; display: inline-block; z-index: 0; padding: 0 2px; }
 .hl::before {
   content: ""; position: absolute; z-index: -1;
-  left: -10px; right: -18px; top: 50%; height: 1.24em;  /* 2× the original 0.62em; oversized past both ends */
-  margin-top: -0.62em;
+  left: -10px; right: -18px; top: 50%; height: 1.05em;  /* oversized past both ends */
+  margin-top: -0.525em;
   background: #dcf04a;                 /* lime-ish yellow */
   opacity: .85; border-radius: 3px 10px 4px 12px;
   /* angle set per item by main.js so the stroke runs from the text's
