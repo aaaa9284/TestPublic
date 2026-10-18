@@ -242,3 +242,16 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 /* ===== Videos above photos in 결과 ===== */
 .r-videos { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 32px; }
 .r-videos .video { width: 100%; max-width: 760px; margin-top: 0; }
+
+/* ===== Highlighter-pen mark under the before→after numbers ===== */
+.story .big { margin-bottom: 6px; }
+.hl { position: relative; display: inline-block; z-index: 0; padding: 0 2px; }
+.hl::before {
+  content: ""; position: absolute; z-index: -1;
+  left: -10px; right: -14px; bottom: 0.02em; height: 0.62em;
+  background: #dcf04a;                 /* lime-ish yellow */
+  opacity: .85; border-radius: 3px 10px 4px 12px;
+  transform: rotate(-3deg) skewX(-14deg);
+  transform-origin: left center;
+}
+@media print { .hl::before { opacity: .5; } }
