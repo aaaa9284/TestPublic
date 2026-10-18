@@ -212,7 +212,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 /* ===== Spacing & separator tweaks ===== */
 .hero.intro { padding: 120px 0 96px; }
 .hero.intro .kicker { margin-bottom: 14px; }
-.hero.intro h1 { margin-bottom: 36px; }
+.hero.intro h1 { margin-bottom: 0.68em; } /* ≈ half the heading line height */
 .hero.intro p:not(.kicker) + p { margin-top: 22px; }
 .hero.intro .actions { margin-top: 44px; }
 .contact { border-top: 1px solid var(--line); }
