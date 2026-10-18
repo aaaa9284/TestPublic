@@ -109,7 +109,7 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 .tl li { display: flex; flex-wrap: wrap; gap: 2px 20px; }
 .tl .w { flex: 0 0 170px; color: var(--text-2); }
 .plist { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
-.plist ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; color: var(--text-2); font-size: 16px; }
+.plist ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; color: inherit; font-size: 16px; }
 .paper-actions { max-width: 860px; margin: 20px auto 0; display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; }
 
 /* ===== Case pages (E + A) ===== */
